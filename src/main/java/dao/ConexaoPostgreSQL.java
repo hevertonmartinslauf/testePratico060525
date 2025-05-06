@@ -1,7 +1,21 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+
+ SCRIPT CRIAÇÃO TABELAS BANCO DE DADOS
+
+ CREATE TABLE usuario (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    senha CHAR(64) NOT NULL
+);
+
+CREATE TABLE funcionario (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    data_admissao DATE NOT NULL,
+    salario DECIMAL(10,2) NOT NULL,
+    status BOOLEAN NOT NULL
+);
  */
 package dao;
 
